@@ -22,7 +22,7 @@ public class BioskopWithScanner12 {
         System.out.print("Masukkan menu (1, 2, 3) : ");
         menu = sc.nextInt();
         sc.nextLine();
-
+        
         switch (menu) {
             case 1 :
             while (true) {
@@ -68,9 +68,13 @@ public class BioskopWithScanner12 {
                     }
                 }
             }
-                System.out.println();
                 break;
+
             case 3 :
+                return;
+
+            default :
+                System.out.println("Angka yang dimasukkan tidak valid!");
                 break;
         }
         }
